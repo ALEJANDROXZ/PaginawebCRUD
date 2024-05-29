@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('../Resources/Image/fondoindex.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #333; /* Color de texto general más oscuro para mejor contraste */
+}
+
+section {
+    position: relative;
+    max-width: 400px;
+    background-color: rgba(255, 255, 255, 0.8); /* Un poco de blanco para que se vea el fondo pero se lea el texto */
+    border: 2px solid rgba(0, 0, 0, 0.5); /* Borde más sutil */
+    border-radius: 20px;
+    backdrop-filter: blur(55px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 3rem;
+}
+
+.inputbox input {
+    width: 100%;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.5); /* Fondo de input ligeramente blanco para leer mejor */
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 0 35px 0 5px;
+    color: #333; /* Color de texto para inputs */
+}
+
+.inputbox ion-icon {
+    position: absolute;
+    right: 8px;
+    color: #333; /* Iconos más oscuros para contraste */
+    font-size: 1.2rem;
+    top: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333; /* Título oscuro para contraste */
+    text-align: center;
+}
+
+.inputbox {
+    position: relative;
+    margin: 30px 0;
+    max-width: 310px;
+    border-bottom: 2px solid #333; /* Línea del input más oscura */
+}
+
+.inputbox label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #333; /* Label más oscuro para contraste */
+    font-size: 1rem;
+    pointer-events: none;
+    transition: all 0.5s ease-in-out;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+    top: -5px;
+    color: #555; /* Color más oscuro al enfocar para que se note el cambio */
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: #333; /* Botón más oscuro */
+    color: #fff; /* Texto del botón en blanco para contraste */
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.4s ease;
+}
+
+button:hover {
+    background-color: #555; /* Botón más claro al pasar el mouse */
+}
+
+.register, .forgot-password {
+    font-size: 0.9rem;
+    color: #333; /* Color más oscuro para el texto */
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.register p a, .forgot-password a {
+    text-decoration: none;
+    color: #007bff; /* Azul brillante para enlaces, común en diseños web */
+    font-weight: 600;
+}
+
+.register p a:hover, .forgot-password a:hover {
+    color: #0056b3; /* Azul más oscuro al pasar el mouse */
+    text-decoration: underline; /* Subraya el enlace para destacarlo */
+}
+

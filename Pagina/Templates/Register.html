@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+    <link rel="stylesheet" href="../Css/register.css">
+</head>
+<body>
+    <section>
+        <h1>Registro</h1>
+        <form id="emailRegisterForm">
+            <div class="inputbox">
+                <ion-icon name="mail-outline"></ion-icon>
+                <input id="newuser" type="email" placeholder="Correo electrónico" required>
+            </div>
+            <div class="inputbox">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input id="newpassword" type="password" placeholder="Contraseña" required>
+            </div>
+            <button id="registerbtn" type="submit">Registrarse</button>
+        </form>
+        <!-- Botones para registro con Google y Facebook -->
+        <div class="social-login">
+            <a id="googleSignUp" href="#"><img src="../Resources/Image/google.png" alt="Registrarse con Google" /></a>
+            <a id="facebookSignUp" href="#"><img src="../Resources/Image/facebook.png" alt="Registrarse con Facebook" /></a>
+        </div>
+    </section>
+    <script type="module" src="../Controllers/UserRegister.js"></script>
+</body>
+</html>

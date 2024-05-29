@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('../Resources/Image/FondoHome.jpg'); /* Cambia el color de fondo según tu preferencia */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 300px;
+    text-align: center;
+}
+
+.window {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.message {
+    margin-bottom: 20px;
+}
+
+.close-button {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff; /* Borde brillante */
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.button-container {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
